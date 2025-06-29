@@ -8,13 +8,13 @@ public sealed class CurrentDateTimeTools
     [McpServerTool, Description("Get today's date based on the server's timezone.")]
     public static string GetServerDate()
     {
-        return DateTime.UtcNow.ToString("yyyy-MM-dd");
+        return DateTime.Now.ToString("yyyy-MM-dd");
     }
 
     [McpServerTool, Description("Get today's day of the week.")]
     public static string GetServerDayOfWeek()
     {
-        return DateTime.UtcNow.DayOfWeek.ToString();
+        return DateTime.Now.DayOfWeek.ToString();
     }
 
     [McpServerTool, Description("Get the current local date and time of the server")]
@@ -26,7 +26,7 @@ public sealed class CurrentDateTimeTools
     [McpServerTool, Description("Get the server's day of the year.")]
     public static string GetServerDayOfYear()
     {
-        return DateTime.UtcNow.DayOfYear.ToString();
+        return DateTime.Now.DayOfYear.ToString();
     }
 
     [McpServerTool, Description("Get the current UTC date and time.")]
